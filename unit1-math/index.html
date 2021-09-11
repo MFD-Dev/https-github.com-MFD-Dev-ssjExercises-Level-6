@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM NAME GENERATOR</title>
+</head>
+
+
+         
+<!-- 
+// var power = Math.pow(5,2); // 5 to the power of 2
+// var roundDown = Math.floor(6.52);
+// var roundUp = Math.ceil(2.1);
+// var roundToNearest = Math.round(2.4);
+// var findLargest = Math.max(2,3,10,5);
+// var findSmallest = Math.min(2,3,10,5);
+// console.log(power); // try the other values too
+
+// var rand = (Math.floor(Math.random() * 10) + 1)
+// console.log(rand) -->
+
+
+<!-- 
+    // 1. Rounding:
+    // Use the Math object to round 5.7 down to 5. (Feel free to look at the examples.)
+
+    // var rd = Math.floor(5.7)
+    // console.log(rd)
+
+    // 2. Exponents:
+    // Raise 4 to the power of 3 using the Math object.
+        // var powNum = Math.pow(4, 3);
+        // console.log(powNum) -->
+    <!-- //3. Pick a random number:
+    // Generate a random integer from 0 through 9.
+        // var ranNum = Math.floor(Math.random() * 10) 
+        // console.log(ranNum)
+
+    // Then try 1 through 10.
+    // var ranNum = Math.floor(Math.random() * 10)  +1
+        // console.log(ranNum)
+    // Next, try a random integer from 3 through 8.
+    // still off
+    // var ranNum = Math.floor(Math.random() * 9) + 3
+    // console.log(ranNum)
+
+    // After that, try typing it again (feel free to use different numbers) until you are comfortable doing it without looking at an example. -->
+
+    <!-- //////////////////////////////////////////////////////////////
+    //4. Pick a random name:
+    // Create an array of people’s names.
+
+    // Create a button and a div.
+
+    // When the button is clicked, a random name from the array should appear in the div.
+
+    // (Hint: Remember that arrays start counting at zero.) -->
+
+<!-- <div id="myDiv">
+    <h1 id="h1Div">Generate Random Name</h1>
+    <div id="random-name"></div>
+    <button type="button" id="generate" >Btn</button>
+</div>
+
+<style>
+    #myDiv {
+        margin: 2rem 0;
+    }
+    #generate {
+        padding: 5px 25px;
+        background-color: aqua;
+    }
+</style>
+
+
+    <script>
+         const firstNames = ['tom', 'cat', 'ford'];
+
+        const getRandomNumber = (max) => Math.floor(Math.random() * max);
+
+        const getRandomName = () =>   
+            `${firstNames[getRandomNumber(firstNames.length)]}`;
+
+          
+        const setRandomName = () => {
+            document.getElementById('random-name').innerText = getRandomName();
+        }
+
+        document.getElementById('generate').addEventListener('click', setRandomName);
+
+        setRandomName(); -->
+<!-- //////////////// -->
+<!-- <style>
+    /* @import url('https://fonts.googleapis.com/css2?family+Poppins:ital,wght@0,100;'); */
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #468499;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+}
+.container {
+    width: calc(768px - 1rem);
+    background: #0f2229;
+    color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+}
+.container h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.container .form {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+}
+.container .form input {
+    width: 100%;
+    background: #1f3841;
+    border: none;
+    outline: none;
+    padding: 15px 145px 15px 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.container .form button {
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #0f2229;
+    right: 3px;
+    top: 3px;
+}
+.container .nameBox {
+    position: relative;
+    background: #1f3841;
+    border-radius: 10px;
+    padding: 12px;
+}
+.container .nameBox span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: .3px;
+}
+</style>
+
+<body>
+    
+<div class="container">
+    <h4>How many times would you like to generate (up to 10)</h4>
+    <div class="form">
+        <input type="number" name="" min="1" max="10" id="" value="1" class="qty" >
+        <button onclick="nameQty()">GENERATE</button>
+    </div>
+    <div class="nameBox">
+        <span class="nameList">
+            CLICK ON GENERATE BUTTON
+        </span>
+    </div>
+</div>
+      
+<script>
+    // alert('this is working')
+    
+    let firstName = ['tom', 'jerry', 'ford']
+
+    function getName() {
+        var randomName = firstName[Math.floor(Math.random() * firstName.length)] 
+        return randomName;
+    } 
+    function nameQty() {
+       var userQty = document.querySelector('.qty').value;
+       document.querySelector('.nameList').innerHTML = '';
+       if (userQty > 3) {
+           document.querySelector('.nameList').innerHTML = 'ONLY 3 NAMES CAN BE GENERATED';
+       }
+       else {
+           for (var i = 0; i < userQty; i++) {
+            document.querySelector('.nameList').innerHTML += getName() + '<br>' 
+           }
+       }
+    }
+</script> -->
+
+        
+<!-- 
+    ///////////////////////////////////////////////////////////////////////
+    //5. Pick a random image:
+    // Create an array of image urls (use any images from the internet).
+
+    // Create a button and a div.
+
+    // When the button is clicked, a random image from the array should appear in the div. -->
+
+
+
+
+
+      
+</script>  
+</body>
+</html>
